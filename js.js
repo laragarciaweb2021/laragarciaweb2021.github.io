@@ -9,8 +9,8 @@ console.log("Cargado con éxito")
   projectId: "fbproyectofinalauth",
   storageBucket: "fbproyectofinalauth.appspot.com",
   messagingSenderId: "917131799636",
-  appId: "1:917131799636:web:7d893e7e6c0064b6c051c1",
-  measurementId: "G-0FX9PVLQ0X"
+  appId: "1:917131799636:web:7d893e7e6c0064b6c051c1"
+
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
