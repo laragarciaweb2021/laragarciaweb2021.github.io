@@ -32,7 +32,7 @@ let arregloUsuarios = [];
   
 
 
-  function agregar_gatos(){
+  function agregar_empleado(){
   	var edad = document.getElementById("edad").value
   	var nombre = document.getElementById("nombreEmpleado").value
   	var area = document.getElementById("areaempleado").value
