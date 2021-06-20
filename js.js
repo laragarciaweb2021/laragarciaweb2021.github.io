@@ -42,9 +42,9 @@ let arregloUsuarios = [];
   	}else{
   		  db.collection("Empleados").add({ 
 
-    Nombre: nombre,
-    Edad: edad,
-    Area: area
+    nombre: nombre,
+    edad: edad,
+    area: area
     
 
 })
