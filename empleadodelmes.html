@@ -23,15 +23,12 @@
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script> 
 
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script> 
-
-
 		
 <script id="MainScript">
 
 var ImgName , ImgUrl ;
 var files = [];
 var reader;
-
 
 var firebaseConfig = {
     apiKey: "AIzaSyCBPAy9N0RmMpPVaBjfHlUBp7eA7bOjb-o",
@@ -62,7 +59,7 @@ document.getElementById("select").onclick=function(e){
 
       }
       input.click();
-       
+   
 }
 
 document.getElementById('upload').onclick=function(){
@@ -73,8 +70,6 @@ document.getElementById('upload').onclick=function(){
 
 		var progress = (snapshot.bytesTransferred / snapshot.totalBytes)* 100;
 		document.getElementById('UpProgress').innerHTML = 'Upload'+ progress+'%'; 
-
-   
 	},
 	function(error){
         alert('Error')
@@ -87,15 +82,12 @@ document.getElementById('upload').onclick=function(){
 		firebase.database().ref('Pictures/'+ImgName).set({
 			Name:ImgName,
 			Link: ImgUrl
-
 		});
 		alert('Su información fue cargada a firebase')
 	}
-
 	);
 	});
-}
- 
+} 
  document.getElementById('retrieve').onclick=function(){
 
  	ImgName=document.getElementById('namebox').value;
@@ -103,22 +95,12 @@ document.getElementById('upload').onclick=function(){
  		document.getElementById('myimg').src = snapshot.val().Link;
  
  	});
-
-
  }
-
-
 	</script>
-
-
 <br>
 	<br>
 	<br>
 	<br>
-
 	<a href="index.html">Regresar</a>
-
 </body>
-
-
 </html>
